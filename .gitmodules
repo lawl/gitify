@@ -1,0 +1,3 @@
+[submodule "adhocify"]
+	path = adhocify
+	url = http://git.quitesimple.org//adhocify

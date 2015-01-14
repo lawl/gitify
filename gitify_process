@@ -1,0 +1,8 @@
+#!/bin/bash
+CONFIG_FILE=$1
+source $CONFIG_FILE
+
+cd $GIT_DIR
+git add -A
+git commit -m $(date +%s)
+git push -u master origin

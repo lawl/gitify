@@ -1,0 +1,5 @@
+#!/bin/bash
+CONFIG_FILE="$1"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source $CONFIG_FILE
+./adhocify.elf -m IN_CLOSE_WRITE -w "$WATCH_DIR" "$DIR/gitify_process" $CONFIG_FILE
